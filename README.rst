@@ -14,6 +14,15 @@ Included scripts
 .. note::
    See the scripts for further information, including usage.
 
+clock
+'''''
+
+*No, really*.  Having a popup clock is super useful, it saves having to dip in
+and out of fullscreen mode all the time.
+
+It is bound ``backtick`` by default, simply because that matches my ``Mod4``
+binding in awesomewm_ to toggle the wibox.
+
 Bugs
 ----
 
@@ -25,5 +34,6 @@ reproduce the problem, or even better a patch!
 
 
 .. _mpv: https://mpv.io/
+.. _awesomewm: http://awesome.naquadah.org/
 .. _issue: https://github.com/JNRowe/mpv-scripts/issues
 .. _mail: jnrowe@gmail.com
