@@ -23,6 +23,13 @@ and out of fullscreen mode all the time.
 It is bound ``backtick`` by default, simply because that matches my ``Mod4``
 binding in awesomewm_ to toggle the wibox.
 
+rating
+''''''
+
+A super simplistic rating system for files.  Hit ``<C-{1..5}>`` to toggle
+a symlink in ``$XDG_DATA_HOME/mpv/ratings``.  Then you can play files with
+a specific rating by ``glob``'ing at the symlink directories.
+
 Bugs
 ----
 
