@@ -30,6 +30,29 @@ A super simplistic rating system for files.  Hit ``<C-{1..5}>`` to toggle
 a symlink in ``$XDG_DATA_HOME/mpv/ratings``.  Then you can play files with
 a specific rating by ``glob``'ing at the symlink directories.
 
+Contributors
+------------
+
+I'd like to thank the following people who have contributed to ``mpv-scripts``.
+
+Patches
+'''''''
+
+* Nathan McGregor
+
+Bug reports
+'''''''''''
+
+* <your name here>
+
+Ideas
+'''''
+
+* <your name here>
+
+If I've forgotten to include your name I wholeheartedly apologise.  Just drop me
+a mail_ and I'll update the list!
+
 Bugs
 ----
 
