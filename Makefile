@@ -25,7 +25,7 @@ display_sources:
 	@echo $(realpath $(SOURCES) $(RST_SOURCES))
 
 check: lint_config.lua
-	$(MOONC) -l $(SOURCES)
+	$(MOONC) -l $(filter-out lint_config.moon, $(SOURCES))
 	for f in $(RST_SOURCES); do \
 	    $(RST2HTML) --strict $$f >/dev/null || exit $?; \
 	done
