@@ -22,7 +22,7 @@ clean:
 	$(RM) $(TARGETS) $(RST_TARGETS)
 
 display_sources:
-	@echo $(realpath $(SOURCES))
+	@echo $(realpath $(SOURCES) $(RST_SOURCES))
 
 check: lint_config.lua
 	$(MOONC) -l $(SOURCES)
