@@ -1,7 +1,7 @@
 SOURCES ::= $(wildcard *.moon)
-TARGETS ::= $(patsubst %.moon, %.lua, $(SOURCES))
+TARGETS ::= $(SOURCES:.moon=.lua)
 RST_SOURCES ::= $(wildcard *.rst)
-RST_TARGETS ::= $(patsubst %.rst, %.html, $(RST_SOURCES))
+RST_TARGETS ::= $(RST_SOURCES:.rst=.html)
 
 MOONC ::= moonc
 RST2HTML ::= rst2html.py
