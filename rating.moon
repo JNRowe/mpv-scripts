@@ -36,11 +36,11 @@ toggle_rating = (key) ->
     GLib.mkdir_with_parents GLib.path_get_dirname(link_name), 493  -- 0755
     with Gio.file_new_for_path link_name
         action = if \query_exists!
-                \delete!
-                "Removed"
-            else
-                \make_symbolic_link path
-                "Added"
+            \delete!
+            "Removed"
+        else
+            \make_symbolic_link path
+            "Added"
         mp.osd_message "#{action} #{rating_char\rep key} rating"
 
 for key = 1, 5
