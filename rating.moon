@@ -4,13 +4,13 @@
 -- pops up, just tap C-5 and a link is made in ${XDG_DATA_HOME}/mpv/ratings/5.
 -- Then at some later point, after you've been forced to suffer through an
 -- entire thirteen seconds of How I Met Your Mother, you can attempt to redeem
--- some essence of sanity with `mpv ${XDG_DATA_HOME}/mpv/ratings/5/**(@-.Oa)` to
--- pull the furthest seen classic from the pile by taking advantage of zsh's
+-- some essence of sanity with `mpv ${XDG_DATA_HOME}/mpv/ratings/5/***(@-.Oa:A)`
+-- to pull the furthest seen classic from the pile by taking advantage of zsh's
 -- fancy glob'ing support.
 --
 -- Note: You'll have to manually clean up bad links should you delete the media
 -- files themselves, something like the following zsh example should do the
--- trick: rm ${XDG_DATA_HOME}/mpv/ratings/**(-@)
+-- trick: rm ${XDG_DATA_HOME}/mpv/ratings/***(-@)
 
 lgi = require "lgi"
 Gio = lgi.Gio
