@@ -27,5 +27,5 @@ display_sources:
 check: lint_config.lua
 	$(MOONC) -l $(filter-out lint_config.moon, $(SOURCES))
 	for f in $(RST_SOURCES); do \
-	    $(RST2HTML) --strict $$f >/dev/null || exit $?; \
+	    $(RST2HTML) --strict $$f >/dev/null || exit $$?; \
 	done
